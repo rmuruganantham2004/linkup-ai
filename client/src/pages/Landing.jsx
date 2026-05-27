@@ -14,7 +14,7 @@ export default function Landing() {
 
   const testimonials = [
     {
-      quote: "Found my co-founder at LinkUp AI during the 2026 AI SF Hackathon. We raised our pre-seed 2 months later.",
+      quote: "Found my co-founder at the Event Network Platform during the 2026 AI Bangalore Hackathon. We raised our pre-seed 2 months later.",
       author: "Alex Rivers",
       role: "CTO, PromptEngine",
       match: "98% Match"
@@ -70,7 +70,7 @@ export default function Landing() {
               fontFamily: "'Orbitron', sans-serif", fontWeight: 700, fontSize: '1.1rem',
               background: 'linear-gradient(135deg, #a855f7, #06b6d4)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
-            }}>LinkUp AI</span>
+            }}>Event Network Platform</span>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
             <Link to="/login" style={{
@@ -322,9 +322,9 @@ export default function Landing() {
           scrollbarWidth: 'none'
         }}>
           {[
-            { title: 'AI HACKATHON 2026', tag: 'Silicon Valley', tagColor: '#a855f7', name: 'Generative AI Hackathon', desc: 'Join 500+ builders in SF for a 48h sprint building with LLMs and AI Agents.', gradient: 'linear-gradient(135deg, rgba(168,85,247,0.35), rgba(6,182,212,0.2))' },
-            { title: 'WEB3 SUMMIT 2026', tag: 'Austin, TX', tagColor: '#06b6d4', name: 'Web3 & DeFi Builders', desc: 'Connect with protocol designers, smart contract devs, and web3 enthusiasts.', gradient: 'linear-gradient(135deg, rgba(6,182,212,0.35), rgba(168,85,247,0.2))' },
-            { title: 'STARTUP PITCH NIGHT', tag: 'New York', tagColor: '#ec4899', name: 'Co-Founder Matchmaking', desc: 'A special focused networking event for technical and non-technical founders.', gradient: 'linear-gradient(135deg, rgba(236,72,153,0.25), rgba(168,85,247,0.2))' }
+            { title: 'AI HACKATHON 2026', tag: 'Bangalore', tagColor: '#a855f7', name: 'Generative AI Hackathon', desc: 'Join 500+ builders in Bangalore for a 48h sprint building with LLMs and AI Agents.', gradient: 'linear-gradient(135deg, rgba(168,85,247,0.35), rgba(6,182,212,0.2))' },
+            { title: 'WEB3 SUMMIT 2026', tag: 'Hyderabad', tagColor: '#06b6d4', name: 'Web3 & DeFi Builders', desc: 'Connect with protocol designers, smart contract devs, and web3 enthusiasts.', gradient: 'linear-gradient(135deg, rgba(6,182,212,0.35), rgba(168,85,247,0.2))' },
+            { title: 'STARTUP PITCH NIGHT', tag: 'Mumbai', tagColor: '#ec4899', name: 'Co-Founder Matchmaking', desc: 'A special focused networking event for technical and non-technical founders.', gradient: 'linear-gradient(135deg, rgba(236,72,153,0.25), rgba(168,85,247,0.2))' }
           ].map((event, i) => (
             <div key={i} style={{
               width: '320px', flexShrink: 0, scrollSnapAlign: 'start',

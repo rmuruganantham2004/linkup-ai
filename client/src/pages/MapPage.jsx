@@ -32,7 +32,7 @@ const createNeonMarker = (color) => {
   });
 };
 
-const mapCenter = [37.7749, -122.4194]; // San Francisco center
+const mapCenter = [20.5937, 78.9629]; // India center
 
 export default function MapPage() {
   const [selectedUser, setSelectedUser] = useState(null);
@@ -57,7 +57,7 @@ export default function MapPage() {
           <div className="lg:col-span-2 rounded-3xl overflow-hidden border border-white/10 relative h-[500px] lg:h-auto shadow-2xl">
             <MapContainer
               center={mapCenter}
-              zoom={13}
+              zoom={5}
               style={{ width: '100%', height: '100%' }}
               zoomControl={true}
             >

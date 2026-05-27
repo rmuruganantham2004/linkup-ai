@@ -90,7 +90,7 @@ export default function Navbar() {
                   WebkitTextFillColor: 'transparent',
                 }}
               >
-                LinkUp AI
+                Event Network Platform
               </span>
             </Link>
 

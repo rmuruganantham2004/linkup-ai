@@ -71,9 +71,9 @@ export default function Messages() {
       <Navbar />
       <Toaster position="top-right" reverseOrder={false} />
 
-      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-col md:flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
         {/* Conversations List Sidebar */}
-        <div className="w-full md:w-80 flex flex-col gap-4 flex-shrink-0">
+        <div className="w-80 flex flex-col gap-4 flex-shrink-0">
           <h2 className="text-xl font-bold font-display text-white">Direct Messages</h2>
           
           <div className="relative">
