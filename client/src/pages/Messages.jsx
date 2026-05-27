@@ -71,7 +71,7 @@ export default function Messages() {
       <Navbar />
       <Toaster position="top-right" reverseOrder={false} />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-col md:flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-col md:flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
         {/* Conversations List Sidebar */}
         <div className="w-full md:w-80 flex flex-col gap-4 flex-shrink-0">
           <h2 className="text-xl font-bold font-display text-white">Direct Messages</h2>
@@ -90,10 +90,10 @@ export default function Messages() {
                 <button
                   key={user.id}
                   onClick={() => setSelectedConvo(user)}
-                  className={`w-full text-left p-3.5 rounded-2xl flex items-center gap-3 transition-all border cursor-pointer ${
+                  className={`w-full text-left p-3.5 rounded-2xl flex items-center gap-3 transition-all border cursor-pointer hover:-translate-y-0.5 hover:shadow-lg ${
                     isSelected
-                      ? 'bg-neon-purple/10 border-neon-purple/50 text-white'
-                      : 'bg-white/5 border-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+                      ? 'bg-neon-purple/10 border-neon-purple/50 text-white shadow-neon-purple/20'
+                      : 'bg-white/5 border-white/5 text-gray-400 hover:bg-white/10 hover:text-white hover:border-white/20'
                   }`}
                 >
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-neon-purple to-neon-cyan p-[1.5px] relative flex-shrink-0">

@@ -69,7 +69,7 @@ export default function Events() {
       <Navbar />
       <Toaster position="top-right" reverseOrder={false} />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-col md:flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 flex-1 flex flex-col md:flex-row gap-6 pb-8 h-[calc(100vh-100px)]">
         {/* Rooms Sidebar */}
         <div className="w-full md:w-64 flex flex-col gap-4 flex-shrink-0">
           <h2 className="text-xl font-bold font-display text-white">Event Hubs</h2>
@@ -80,10 +80,10 @@ export default function Events() {
                 <button
                   key={room.id}
                   onClick={() => joinRoom(room.id)}
-                  className={`w-full text-left p-3.5 rounded-2xl flex items-center justify-between transition-all border cursor-pointer ${
+                  className={`w-full text-left p-3.5 rounded-2xl flex items-center justify-between transition-all border cursor-pointer hover:-translate-y-0.5 hover:shadow-lg ${
                     isSelected
-                      ? 'bg-neon-purple/10 border-neon-purple/50 text-white'
-                      : 'bg-white/5 border-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+                      ? 'bg-neon-purple/10 border-neon-purple/50 text-white shadow-neon-purple/20'
+                      : 'bg-white/5 border-white/5 text-gray-400 hover:bg-white/10 hover:text-white hover:border-white/20'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -178,7 +178,7 @@ export default function Events() {
             {activeTab === 'members' && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {demoUsers.slice(0, 5).map((mUser) => (
-                  <div key={mUser.id} className="p-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-between">
+                  <div key={mUser.id} className="p-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-between hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-neon-purple to-neon-cyan p-[1.5px]">
                         <div className="w-full h-full bg-dark-800 rounded-[7px] flex items-center justify-center font-bold text-white text-xs">
@@ -212,7 +212,7 @@ export default function Events() {
 
                 <div className="space-y-4">
                   {demoUsers.slice(1, 4).map((mUser) => (
-                    <div key={mUser.id} className="p-4 bg-white/5 border border-white/10 rounded-2xl flex flex-col md:flex-row justify-between md:items-center gap-4">
+                    <div key={mUser.id} className="p-4 bg-white/5 border border-white/10 rounded-2xl flex flex-col md:flex-row justify-between md:items-center gap-4 hover:border-neon-cyan/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-neon-cyan/10 transition-all duration-300">
                       <div>
                         <h4 className="font-bold text-white text-sm flex items-center gap-1.5">
                           {mUser.name}

@@ -29,7 +29,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-dark-900 cyber-grid pb-12">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-10">
         {/* Welcome Section */}
         <motion.div
           initial={{ opacity: 0, y: -16 }}
@@ -67,7 +67,7 @@ export default function Dashboard() {
           {/* Left Column: Recommendations & Matching */}
           <div className="lg:col-span-2 space-y-8">
             {/* AI Recommendations section */}
-            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5 relative overflow-hidden">
+            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5 relative overflow-hidden hover:scale-[1.01] hover:shadow-2xl hover:shadow-neon-purple/10 transition-all duration-300">
               <div className="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
                 <HiOutlineSparkles size={100} className="text-neon-purple" />
               </div>
@@ -104,7 +104,7 @@ export default function Dashboard() {
             {/* Match Heatmap & Event Analytics */}
             <motion.div variants={staggerItem} className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {analytics.map((anal, i) => (
-                <div key={i} className="glass rounded-3xl p-6 border border-white/5 relative overflow-hidden">
+                <div key={i} className="glass rounded-3xl p-6 border border-white/5 relative overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:shadow-neon-cyan/10 transition-all duration-300 cursor-default">
                   <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-neon-cyan/5 rounded-full blur-xl pointer-events-none" />
                   <span className="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-2">{anal.label}</span>
                   <h4 className="text-xl font-bold text-white font-display mb-1">{anal.value}</h4>
@@ -130,7 +130,7 @@ export default function Dashboard() {
           {/* Right Column: Trending Skills, Active Rooms & Stats */}
           <div className="space-y-8">
             {/* Active Event Rooms */}
-            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5">
+            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5 hover:border-white/10 transition-colors duration-300">
               <div className="flex items-center gap-2 mb-6">
                 <HiOutlineUserGroup className="text-neon-cyan text-xl" />
                 <h3 className="text-xl font-bold font-display text-white">Active Rooms</h3>
@@ -157,7 +157,7 @@ export default function Dashboard() {
             </motion.div>
 
             {/* Trending Skills Section */}
-            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5">
+            <motion.div variants={staggerItem} className="glass rounded-3xl p-6 border border-white/5 hover:border-white/10 transition-colors duration-300">
               <div className="flex items-center gap-2 mb-4">
                 <HiOutlineTrendingUp className="text-neon-pink text-xl" />
                 <h3 className="text-xl font-bold font-display text-white">Trending Skills</h3>

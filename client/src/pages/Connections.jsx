@@ -22,7 +22,7 @@ export default function Connections() {
       <Navbar />
       <Toaster position="top-right" reverseOrder={false} />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8">
         <h1 className="text-3xl font-extrabold font-display text-white mb-2">My Network</h1>
         <p className="text-gray-400 text-sm mb-8">Manage connection requests and active network matches.</p>
 
@@ -41,7 +41,7 @@ export default function Connections() {
             ) : (
               <div className="space-y-4">
                 {pendingRequests.map((reqUser) => (
-                  <div key={reqUser.id} className="glass p-5 rounded-2xl border border-white/5 space-y-4">
+                  <div key={reqUser.id} className="glass p-5 rounded-2xl border border-white/5 space-y-4 hover:-translate-y-1 hover:shadow-xl hover:shadow-neon-cyan/10 transition-all duration-300">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-neon-purple to-neon-cyan p-[1.5px]">
                         <div className="w-full h-full bg-dark-800 rounded-[9px] flex items-center justify-center font-bold text-white text-sm">
@@ -88,7 +88,7 @@ export default function Connections() {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {connections.map((cUser) => (
-                  <div key={cUser.id} className="glass p-5 rounded-2xl border border-white/5 flex flex-col justify-between space-y-4 hover:border-neon-purple/50 transition-colors">
+                  <div key={cUser.id} className="glass p-5 rounded-2xl border border-white/5 flex flex-col justify-between space-y-4 hover:border-neon-purple/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-neon-purple/10 transition-all duration-300">
                     <div className="flex justify-between items-start">
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-neon-purple to-neon-cyan p-[2px]">
